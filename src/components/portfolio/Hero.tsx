@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 import Image from "next/image";
 import gsap from "gsap";
-import jenny from "@/assets/jenny.png";
+import jenny from "@/assets/jenny.webp";
 
 export function Hero() {
   const root = useRef<HTMLElement>(null);

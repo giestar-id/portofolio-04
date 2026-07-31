@@ -1,5 +1,5 @@
 import Image from "next/image";
-import jenny from "@/assets/jenny.png";
+import jenny from "@/assets/jenny.webp";
 
 export function About() {
   return (

@@ -1,87 +1,103 @@
 # Emma — Mathematics Graduate Portfolio
 
-Portfolio website built with **Next.js 16**, **React 19**, **TypeScript**, and **Tailwind CSS v4**.
+Portofolio website untuk Emma, seorang lulusan Matematika yang menampilkan profil akademik, pengalaman, penelitian, keterampilan, blog, dan formulir kontak. Dibangun dengan performa tinggi dan animasi modern.
 
-## Sections
+## 🚀 Teknologi
 
-- **Navbar** — Fixed bar with hamburger + sidebar on mobile
-- **Hero** — 3-column grid: GPA stats, photo, student count card
-- **About** — SVG `clipPath` image breakout effect
-- **Services** — Dark cards with horizontal scroll on mobile
-- **Experience & Research** — Accordion with conditional render
+| Teknologi | Kegunaan |
+|-----------|----------|
+| **Next.js 16** | React framework dengan App Router dan server actions |
+| **React 19** | Library UI dengan concurrent features |
+| **TypeScript** | Type safety & developer experience |
+| **Tailwind CSS v4** | Utility-first styling |
+| **GSAP** | Animasi & transisi halus |
+| **lucide-react** | Ikon vektor ringan |
+| **@tanstack/react-query** | Manajemen state server |
+| **tw-animate-css** | Utility animasi Tailwind |
+
+## 📋 Sections
+
+- **Navbar** — Fixed bar dengan hamburger + sidebar mobile
+- **Hero** — Grid 3 kolom: GPA stats, foto, kartu student count
+- **About** — SVG clipPath image breakout effect
+- **Services** — Kartu gelap dengan horizontal scroll di mobile
+- **Experience & Research** — Accordion dengan render kondisional
 - **Skills** — Programming, Data Visualization, Mathematics
-- **Testimonials** — Student review cards
-- **Blog** — Article post cards
-- **Contact** — Form with skills marquee
-- **Footer** — Copyright and links
+- **Testimonials** — Kartu review mahasiswa
+- **Blog** — Kartu artikel
+- **Contact** — Form dengan skills marquee
+- **Footer** — Copyright dan tautan
 
-Animations powered by **GSAP**.
+Animasi powered by **GSAP**.
 
 ---
 
-## Deploy to Vercel
+## 🛠 Development
+
+```bash
+npm install        # Install dependencies
+npm run dev        # Jalankan di http://localhost:3000
+npm run build      # Build production
+npm run lint       # Linting & check kode
+```
+
+---
+
+## 🌐 Cara Deploy ke Vercel
 
 ### 1. Buat Akun GitHub
 
 1. Buka https://github.com
-2. Klik **Sign up** dan ikuti pendaftaran (email, password, username)
-3. Verifikasi email dari GitHub
+2. Klik tombol **Sign up** (pojok kanan atas)
+3. Masukkan **email**, buat **password**, dan pilih **username**
+4. Verifikasi email — cek inbox/spam lalu klik link verifikasi dari GitHub
+5. Ikuti panduan onboarding (bisa dilewati)
 
-### 2. Buat Repository GitHub
+### 2. Buat Repository Baru di GitHub
+
+1. Login ke GitHub, klik icon **+** (pojok kanan atas) → **New repository**
+2. Isi **Repository name** dengan `portofolio-04`
+3. Biarkan **Public** (jangan centang apapun)
+4. Klik **Create repository**
+5. Halaman akan muncul dengan perintah-perintah git — jangan tutup
+
+### 3. Push Project ke GitHub
+
+Buka terminal/CMD di folder project lalu jalankan:
 
 ```bash
-# Di terminal, masuk ke folder project
-cd D:\BUSINNES\contoh\Portofolio\portofolio-04
-
-# Init git
 git init
-
-# Tambah semua file
 git add .
-
-# Commit pertama
 git commit -m "Initial commit"
-
-# Buat repo di GitHub (via website) lalu hubungkan
-git remote add origin https://github.com/username/portofolio-04.git
+git remote add origin https://github.com/username-anda/portofolio-04.git
 git push -u origin main
 ```
 
-### 3. Deploy ke Vercel
+> **Catatan:** Ganti `username-anda` dengan username GitHub asli kamu.
+
+### 4. Deploy ke Vercel
 
 1. Buka https://vercel.com
-2. Login dengan akun GitHub
-3. Klik **Add New → Project**
+2. Klik **Continue with GitHub** untuk login
+3. Klik **Add New…** → **Project**
 4. Pilih repository `portofolio-04`
-5. Biarkan semua default — Vercel auto-detect Next.js
-6. Klik **Deploy**
+5. Settings framework akan terdeteksi otomatis sebagai **Next.js**
+6. Klik **Deploy** — proses build akan berjalan
+7. Selesai! URL live akan muncul seperti:
+   ```
+   https://portofolio-04.vercel.app
+   ```
 
-Setelah selesai, kamu akan mendapat URL seperti `https://portofolio-04.vercel.app`
-
-### 4. Custom Domain (opsional)
+### 5. Custom Domain (Opsional)
 
 1. Di dashboard Vercel, buka project → **Settings → Domains**
 2. Masukkan domain kamu (contoh: `emma.my.id`)
-3. Ikuti petunjuk untuk mengatur DNS (biasanya tambah CNAME ke `cname.vercel-dns.com`)
+3. Atur DNS di penyedia domain:
+   - **Tipe:** CNAME
+   - **Name:** `www` (atau `@`)
+   - **Target:** `cname.vercel-dns.com`
+4. Tunggu propagasi DNS (beberapa menit hingga 24 jam)
 
 ---
 
-## Development
-
-```bash
-npm install      # Install dependencies
-npm run dev      # Jalankan di http://localhost:3000
-npm run build    # Build production
-npm run lint     # Linting
-```
-
-## Tech Stack
-
-- Next.js 16.2.12
-- React 19.2.4
-- TypeScript
-- Tailwind CSS v4
-- GSAP (animasi)
-- lucide-react (icons)
-- @tanstack/react-query (state)
-- tw-animate-css (animasi Tailwind)
+Dibuat dengan ❤️ menggunakan Next.js + Tailwind CSS.
